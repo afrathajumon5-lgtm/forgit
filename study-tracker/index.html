@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Study Tracker</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+    <body>
+        <h1>My Study Tracker</h1>
+        <p>Organize your study tasks!</p>
+        <div class="dashboard">
+            <div class="card">
+                <h3>Total subjects</h3>
+                <p id="totalCount">0</p>
+            </div>
+            <div class="card">
+                <h3>Completed subjects</h3>
+                <p id="completedCount">0</p>
+            </div>
+            <div class="card">
+                <h3>Pending subjects</h3>
+                <p id="pendingCount">0</p>      
+                </div>
+        </div>
+        <div class="progress-section">
+    <h3>Study Progress</h3>
+
+    <div class="progress-bar">
+        <div id="progressFill"></div>
+    </div>
+
+    <p id="progressText">0% Completed</p>
+</div>
+        <input type="text" id="subjectInput" placeholder="Enter a subject">
+        <button onclick="addSubject()">Add Subject</button>
+        <button onclick="clearAllSubjects()" id="clearAllBtn">
+    Clear All
+</button>
+        <input type="text" id="searchInput" placeholder="Search subjects..." oninput="searchSubjects()">
+        <div class="task-filters">
+    <button onclick="setTaskFilter('all')">All Tasks</button>
+    <button onclick="setTaskFilter('pending')">Pending</button>
+    <button onclick="setTaskFilter('completed')">Completed</button>
+</div>
+
+<ul id="subjectList"></ul>
+        <script src="script.js"></script>
+    </body>
+</html>
