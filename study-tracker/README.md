@@ -1,4 +1,5 @@
-
+## Live Demo
+[Click here to use Study Tracker](https://afrathajumon5-lgtm.github.io/forgit/)
 # 📚 Study Tracker
 
 A simple and user-friendly Study Tracker web application that helps students organize their subjects, manage study tasks, and track their study progress.
